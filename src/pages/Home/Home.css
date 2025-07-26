@@ -1,0 +1,99 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Background Image */
+.banner_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* LEFT GRADIENT OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* CAPTION */
+.hero_caption {
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+  z-index: 2;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+}
+.hero_caption p {
+  max-width: 700px;
+}
+.hero_caption h3 {
+  max-width: 800px;
+}
+/* TITLE IMAGE (inside caption) */
+.caption_img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.hero-btns{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.hero-btns .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: white;
+  color: black; /* ✅ fix: make text visible */
+  border: none;
+  outline: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero-btns .dark-btn {
+  color:#fff;
+  background: #6d6d6eb3;
+}
+.hero-btns .btn-img {
+  width: 25px;
+  height: auto;
+  display: block; /* 👈 important */
+  object-fit: contain;
+}
+.hero-btns .dark-btn-img {
+  width: 25px;
+  height: auto;
+  display: block; /* 👈 important */
+  object-fit: contain;
+}
+.hero-btns .btn:hover {
+  background: #ffffffbf;
+}
+.hero-btns .dark-btn:hover {
+  background: #6d6d6e66;
+}
