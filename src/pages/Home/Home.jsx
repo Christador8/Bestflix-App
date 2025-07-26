@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css';
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import TitleCards from '../../components/TitleCards/TitleCards';
 import hero_banner from '../../assets/hero_banner.png';
