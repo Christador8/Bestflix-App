@@ -45,7 +45,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/Bestflix">
+    <BrowserRouter basename="/">
       <AppRoutes />
     </BrowserRouter>
   );
