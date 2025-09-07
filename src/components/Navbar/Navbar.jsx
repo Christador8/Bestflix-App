@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import bellIcon from '../../assets/bell_icon.png';
@@ -11,11 +12,13 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="navbar-left"></div>
 
-      <img src={logo} alt="Bestflix Logo" className='logo' />
+      <Link to="/">
+        <img src={logo} alt="Bestflix Logo" className='logo' />
+      </Link>
 
       <div className="navbar-center">
         <ul>
-          <li>Home</li>
+          <li><Link to="/">Home</Link></li>
           <li>TV Shows</li>
           <li>Movies</li>
           <li>New & Popular</li>
