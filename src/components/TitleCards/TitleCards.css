@@ -27,3 +27,48 @@
   bottom:10px;
   right: 10px;
 }
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .titlecards {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 4%;
+  }
+  
+  .titlecards h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  
+  .card-list {
+    gap: 8px;
+  }
+  
+  .card-list img {
+    width: 180px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlecards {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 0 3%;
+  }
+  
+  .titlecards h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-list {
+    gap: 6px;
+  }
+  
+  .card-list img {
+    width: 150px;
+    min-width: 150px;
+  }
+}

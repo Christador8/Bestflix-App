@@ -124,3 +124,64 @@ body {
 .navbar-profile:hover .dropdown {
   display: block;
 }
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 4%;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  .navbar-center {
+    display: none; /* Hide nav menu on mobile */
+  }
+  
+  .navbar-right {
+    gap: 12px;
+  }
+  
+  .navbar-text {
+    display: none; /* Hide "Children" text on mobile */
+  }
+  
+  .bell-icon,
+  .search-icon,
+  .caret-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .profile-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 3%;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+  
+  .navbar-right {
+    gap: 8px;
+  }
+  
+  .bell-icon,
+  .search-icon,
+  .caret-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .profile-img {
+    width: 24px;
+    height: 24px;
+  }
+}
