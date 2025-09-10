@@ -1,5 +1,5 @@
 .titlecards {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .titlecards h2 {
@@ -31,7 +31,7 @@
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
   .titlecards {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 20px;
     padding: 0 4%;
   }
@@ -53,7 +53,7 @@
 
 @media (max-width: 480px) {
   .titlecards {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 15px;
     padding: 0 3%;
   }

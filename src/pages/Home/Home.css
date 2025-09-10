@@ -74,6 +74,7 @@
   outline: 0;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 .hero-btns .dark-btn {
   color:#fff;

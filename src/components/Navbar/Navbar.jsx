@@ -19,11 +19,8 @@ const Navbar = () => {
       <div className="navbar-center">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li>TV Shows</li>
-          <li>Movies</li>
-          <li>New & Popular</li>
-          <li>My List</li>
-          <li>Browse by Languages</li>
+          <li><a href="#trending">New & Popular</a></li>
+          <li><a href="#blockbuster">Watch Trailers</a></li>
         </ul>
       </div>
 
