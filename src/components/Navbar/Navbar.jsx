@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
@@ -8,8 +8,19 @@ import profile_img from '../../assets/profile.jpg';
 import caretIcon from '../../assets/caret_icon.png';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <div className='navbar'>
+    <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-left"></div>
 
       <Link to="/">

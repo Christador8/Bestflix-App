@@ -47,15 +47,15 @@ const Home = () => {
 
           <div className="hero-btns">
             {firstTrendingId && (
-              <Link to={`/player/${firstTrendingId}`} className="btn">
+              <Link to={`/player/${firstTrendingId}`} className="btn play-btn">
                 <img src={play_icon} alt="Play icon" className="btn-img" />
                 Play
               </Link>
             )}
-            <button className="btn dark-btn">
+            <a href="#footer" className="btn dark-btn">
               <img src={info_icon} alt="Info icon" className="dark-btn-img" />
               More Info
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -75,7 +75,9 @@ const Home = () => {
         <TitleCards title="Top Picks for You" category="now_playing" />
       </div>
 
-      <Footer />
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 };

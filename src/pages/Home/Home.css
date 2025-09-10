@@ -75,6 +75,11 @@
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btns .play-btn {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1);
 }
 .hero-btns .dark-btn {
   color:#fff;
@@ -94,6 +99,12 @@
 }
 .hero-btns .btn:hover {
   background: #ffffffbf;
+}
+
+.hero-btns .play-btn:hover {
+  background: #ffffffbf;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 .hero-btns .dark-btn:hover {
   background: #6d6d6e66;
